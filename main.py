@@ -4,10 +4,11 @@
 
 def print_program_info():
     # TODO - Change your name
-    print("Server Automator v0.1 by Your Name")
+    print("Server Automator v0.1 by Sarmad")
 
 # This is the entry point to our program
 if __name__ == '__main__':
     print_program_info()
     # TODO - Create a Server object
     # TODO - Call Ping method and print the results
+    ec2Server = server.Server("13.58.111.80")
