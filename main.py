@@ -11,14 +11,16 @@
 from Server import Server
 def print_program_info():
     # TODO - Change your name
-    print("Server Automator v0.11 by SarmadKubba")
+    print("Server Automator v0.14 by SarmadKubba")
 
 # This is the entry point to our program
 if __name__ == '__main__':
     print_program_info()
     # TODO - Create a Server object
-    Ec2 = Server("13.58.111.80")
+    Ec2 = Server("3.144.196.8")
     # TODO - Call Ping method and print the results
 
     Echo = Ec2.ping()
     print(Echo)
+
+    Ec2.update()
